@@ -1,5 +1,14 @@
 ---
 title: "Francesco Mussin"
+subtitle: "MSc math student at ETH Zurich"
+image: propic.jpg
+links:
+  - icon: linkedin
+    text: LinkedIn
+    href: https://linkedin.com
+  - icon: github
+    text: GitHub
+    href: https://github.com
 ---
 
-Welcome to my personal site. I am a MSc mathematics student at ETH Zurich.
+Welcome to my personal site. 
