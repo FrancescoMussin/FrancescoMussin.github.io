@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Francesco Mussin",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome to my personal site. I am a MSc mathematics student at ETH Zurich."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "personal_notes.html",
+    "href": "personal_notes.html",
+    "title": "Personal Notes",
+    "section": "",
+    "text": "No more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want."
   }
 ]
