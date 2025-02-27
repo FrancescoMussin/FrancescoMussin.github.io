@@ -33,7 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-48ffa3e5b9d089919c6712c39e5b00f2.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -107,37 +106,63 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About me</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
+<div class="quarto-about-trestles">
+  <div class="about-entity">
+    <img src="propic.jpg" class="about-image
+  round " style="height: 15em; width: 15em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Francesco Mussin</h1>
 <p class="subtitle lead">MSc math student at ETH Zurich</p>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
-
-
 </header>
-
+    <div class="about-links">
+  <a href="/francesco.mussin@gmail.com" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">Email</span>
+  </a>
+  <a href="https://github.com/FrancescoMussin" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">GitHub</span>
+  </a>
+  <a href="https://www.linkedin.com/in/francesco-mussin-28451025a/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><main class="content" id="quarto-document-content">
 
 <p>Welcome to my personal site.</p>
+<section id="about-me" class="level2">
+<h2 data-anchor-id="about-me">About me</h2>
+<p>I’m a mathematics students in the Master’s degree program at ETH Zurich.</p>
+</section>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<ul>
+<li><p>I’m currently studying at <em>ETH Zurich</em></p></li>
+<li><p>I’ve graduated in Mathematics at <em>Università degli Studi di Milano-Bicocca</em></p></li>
+<li><p>I’ve received my high school diploma in Milan at <em>Liceo Scientifico Piero Bottoni</em></p></li>
+</ul>
 
 
-
-</main> <!-- /main -->
+</section>
+</main></div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -158,13 +183,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

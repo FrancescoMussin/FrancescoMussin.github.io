@@ -2,13 +2,32 @@
 title: "Francesco Mussin"
 subtitle: "MSc math student at ETH Zurich"
 image: propic.jpg
-links:
-  - icon: linkedin
-    text: LinkedIn
-    href: https://linkedin.com
-  - icon: github
-    text: GitHub
-    href: https://github.com
+about:
+  template: trestles
+  image-shape: round
+  image-width: 15em
+  links:
+    - text: Email
+      icon: envelope
+      href: francesco.mussin@gmail.com
+    - text: GitHub
+      icon: github
+      href: https://github.com/FrancescoMussin
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/francesco-mussin-28451025a/
 ---
 
-Welcome to my personal site. 
+Welcome to my personal site.
+
+## About me
+
+I'm a mathematics students in the Master's degree program at ETH Zurich.
+
+## Education
+
+-   I'm currently studying at *ETH Zurich*
+
+-   I've graduated in Mathematics at *Università degli Studi di Milano-Bicocca*
+
+-   I've received my high school diploma in Milan at *Liceo Scientifico Piero Bottoni*
