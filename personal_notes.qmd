@@ -1,0 +1,5 @@
+---
+title: "Personal Notes"
+editor: visual
+---
+No more phisical notebooks or tex files that aren't stored on all my devices, here I can access everything I want.
