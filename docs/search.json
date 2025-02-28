@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Francesco Mussin",
     "section": "",
-    "text": "Welcome to my personal site."
+    "text": "Welcome to my personal site. I put a number of things in here, including my projects, my personal notes on various topics, and more(?)\n\n\nI’m a mathematics students in the Master’s degree program at ETH Zurich.\n\n\n\n\nI’m currently studying at ETH Zurich\nI’ve graduated in Mathematics at Università degli Studi di Milano-Bicocca\nI’ve received my high school diploma in Milan at Liceo Scientifico Piero Bottoni"
   },
   {
     "objectID": "about.html",
@@ -18,20 +18,20 @@
     "href": "personal_notes.html",
     "title": "Personal Notes",
     "section": "",
-    "text": "No more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want."
+    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want."
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Francesco Mussin",
-    "section": "About me",
-    "text": "About me\nI’m a mathematics students in the Master’s degree program at ETH Zurich."
+    "section": "",
+    "text": "I’m a mathematics students in the Master’s degree program at ETH Zurich."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Francesco Mussin",
-    "section": "Education",
-    "text": "Education\n\nI’m currently studying at ETH Zurich\nI’ve graduated in Mathematics at Università degli Studi di Milano-Bicocca\nI’ve received my high school diploma in Milan at Liceo Scientifico Piero Bottoni"
+    "section": "",
+    "text": "I’m currently studying at ETH Zurich\nI’ve graduated in Mathematics at Università degli Studi di Milano-Bicocca\nI’ve received my high school diploma in Milan at Liceo Scientifico Piero Bottoni"
   }
 ]

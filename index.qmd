@@ -17,8 +17,9 @@ about:
       icon: linkedin
       href: https://www.linkedin.com/in/francesco-mussin-28451025a/
 ---
+# Francesco Mussin
 
-Welcome to my personal site.
+Welcome to my personal site. I put a number of things in here, including my projects, my personal notes on various topics, and more(?)
 
 ## About me
 
