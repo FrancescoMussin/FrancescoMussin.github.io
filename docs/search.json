@@ -18,7 +18,7 @@
     "href": "personal_notes.html",
     "title": "Personal Notes",
     "section": "",
-    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want."
+    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want.\n\n📖 Read the Information Theory notes"
   },
   {
     "objectID": "index.html#about-me",
@@ -33,5 +33,33 @@
     "title": "Francesco Mussin",
     "section": "",
     "text": "I’m currently studying at ETH Zurich\nI’ve graduated in Mathematics at Università degli Studi di Milano-Bicocca\nI’ve received my high school diploma in Milan at Liceo Scientifico Piero Bottoni"
+  },
+  {
+    "objectID": "InformationTheoryNotes/summary.html",
+    "href": "InformationTheoryNotes/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "InformationTheoryNotes/intro.html",
+    "href": "InformationTheoryNotes/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "InformationTheoryNotes/index.html",
+    "href": "InformationTheoryNotes/index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "InformationTheoryNotes/references.html",
+    "href": "InformationTheoryNotes/references.html",
+    "title": "References",
+    "section": "",
+    "text": "References"
   }
 ]
