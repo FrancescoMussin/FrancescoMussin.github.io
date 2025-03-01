@@ -18,7 +18,7 @@
     "href": "personal_notes.html",
     "title": "Personal Notes",
     "section": "",
-    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want.\n\n📖 Read the Information Theory notes"
+    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want.\n\n📖 Read my notes on Information Theory (under construction)\n📖 Read my notes on Statistical Learning (under construction)\n📖 Read my notes on Randomized Numerical Linear Algebra (under construction)"
   },
   {
     "objectID": "index.html#about-me",
@@ -46,14 +46,14 @@
     "href": "InformationTheoryNotes/intro.html",
     "title": "Introduction",
     "section": "",
-    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2"
+    "text": "Introduction"
   },
   {
     "objectID": "InformationTheoryNotes/index.html",
     "href": "InformationTheoryNotes/index.html",
     "title": "Preface",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Preface\nHello! Welcome to the notes on Information Theory. These are based on the course taught at ETH by professor Lapidoth but they may include topics outside that course in the future.\nDO NOT cite this as a reference for any reason."
   },
   {
     "objectID": "InformationTheoryNotes/references.html",
@@ -61,5 +61,103 @@
     "title": "References",
     "section": "",
     "text": "References"
+  },
+  {
+    "objectID": "StatisticalLearning/svm.html",
+    "href": "StatisticalLearning/svm.html",
+    "title": "Support Vector Machines",
+    "section": "",
+    "text": "In this chapter we’ll get to examine the support vector machine (SVM), which is an effective way to do classification developed in the 90s. These classifiers are considered to be the best “out of the box” classifiers, meaning that they typically don’t need much fine tuning or tweaking. The original idea for this approach for classification is quite simple and intuitive.\nWe’ll mainly focus on binary classification, later we’ll see how to extend what we do for the general case of more than two classes, so we’re taking the set \\(\\mathcal{Y}\\) to have cardinality \\(|\\mathcal{Y}| = 2\\). For simplicity we take \\(\\mathcal{Y} = \\{-1,+1\\}\\).\nAs usual, we’re going to assume that we have a sample \\(\\{z_1,\\dots,z_m\\}\\subseteq \\mathcal{X}\\times \\mathcal{Y}\\) of pairs \\(z_i = (x_i,y_i)\\) distributed i.i.d. according to some distribution on \\(\\mathcal{X}\\times \\mathcal{Y}\\). We’re going to denote:\n\\[\n\\mathcal{I}^+ = \\{i \\in [m]:\\ y_i = 1\\},\\ \\quad \\text{and}\\quad \\mathcal{I}^- = \\{i \\in [m]:\\ y_i = -1\\}.\n\\]"
+  },
+  {
+    "objectID": "StatisticalLearning/svm.html#maximal-margin-classifier",
+    "href": "StatisticalLearning/svm.html#maximal-margin-classifier",
+    "title": "Support Vector Machines",
+    "section": "Maximal Margin Classifier",
+    "text": "Maximal Margin Classifier\nThe starting idea behind all of this is to separate the vectors with different labels with a hyperplane. For every \\(w \\in \\mathbb{R}^n\\) with \\(\\|w\\| = 1\\) and \\(b \\in \\mathbb{R}\\) we denote with \\(\\mathcal{H}(w,b)\\) the hyperplane \\(\\{x \\in \\mathbb{R}^n:\\ w^T x = b\\}\\). We call the real number \\(b\\) “offset from the origin” (it corresponds to the distance of the hyperplane to the origin). Every such hyperplane \\(\\mathcal{H}(w,b)\\) yields the binary classifier \\(x \\longmapsto \\text{sign}(w^Tx-b)\\)."
+  },
+  {
+    "objectID": "StatisticalLearning/svm.html#support-vector-classifier",
+    "href": "StatisticalLearning/svm.html#support-vector-classifier",
+    "title": "Support Vector Machines",
+    "section": "Support Vector Classifier",
+    "text": "Support Vector Classifier"
+  },
+  {
+    "objectID": "StatisticalLearning/svm.html#support-vector-machines",
+    "href": "StatisticalLearning/svm.html#support-vector-machines",
+    "title": "Support Vector Machines",
+    "section": "Support Vector Machines",
+    "text": "Support Vector Machines"
+  },
+  {
+    "objectID": "StatisticalLearning/references.html",
+    "href": "StatisticalLearning/references.html",
+    "title": "References",
+    "section": "",
+    "text": "References"
+  },
+  {
+    "objectID": "StatisticalLearning/index.html",
+    "href": "StatisticalLearning/index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "Preface\nWelcome to my notes on Statistical Learning."
+  },
+  {
+    "objectID": "RandNLA/references.html",
+    "href": "RandNLA/references.html",
+    "title": "References",
+    "section": "",
+    "text": "References"
+  },
+  {
+    "objectID": "RandNLA/index.html",
+    "href": "RandNLA/index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "InformationTheoryNotes/quantifying_information.html",
+    "href": "InformationTheoryNotes/quantifying_information.html",
+    "title": "Quantifying Information",
+    "section": "",
+    "text": "In this chapter, we’ll mainly focus on getting to know the quantities that will be the protagonists of our theorems and derivations. Those include Entropy, Relative Entropy/Cross Entropy, Conditional Entropy, Mutual Information and Conditional Mutual Information. Those are apparently “simple” concepts that in order to be fully understood require quite a deep understanding."
+  },
+  {
+    "objectID": "InformationTheoryNotes/quantifying_information.html#entropy",
+    "href": "InformationTheoryNotes/quantifying_information.html#entropy",
+    "title": "Quantifying Information",
+    "section": "Entropy",
+    "text": "Entropy\nMathematically, what is information? Well, if you imagine mathematics as a “divine” computer that figures out everything that follows from logic, the only thing that it cannot predict is randomness; if you werre to tell someone a mathematical result, like \\(3\\cdot 3 = 9\\) or \\(\\dim \\mathbb{R}^n = n\\), you’re technically not conveying any new information, since it is something that, on paper, your receiver could figure out. However, if you tell someone the outcome of a random variable, then you’re conveying some “information” that is unattainable in any other way.\n\nMathematically, information is the outcome of a random variable\n\nHowever, not all outcomes are the same: if I knew that \\(X \\sim \\delta_0\\) had take outcome \\(X = 0\\), I wouldn’t be surprised at all, while if \\(X \\sim \\text{Pois}(1)\\), we should be surprised when \\(X = 100\\). In other words, we need to measure the outcomes of random variables based on how much “surprise” they give use. Here’s another way of seeing it. Remember that when you’re in a probability space \\((\\Omega, \\mathcal{F},\\mathbb{P})\\) and an event \\(A\\in \\mathcal{F}\\) happens, then you have to adjust the probability space to \\((A,\\mathcal{F}|_{A}, \\mathbb{P}(\\ \\cdot \\ |A))\\). A simple way to measure how much this space changes from the original is to compute \\(\\mathbb{P}(A)\\). The bigger this is, the less we have to change our notion of probability, because it means that most of \\(\\mathbb{P}\\)’s mass sits on \\(A\\), but if \\(\\mathbb{P}(A)\\) is small, then it means that you have to cut off a lot of mass from \\(\\mathbb{P}\\), potentially making \\(\\mathbb{P}(\\ \\cdot \\ |A)\\) behave a lot differently than \\(\\mathbb{P}(\\ \\cdot \\ )\\) on most sets.\nSo, in principle, we could just measure \\(\\mathbb{P}(A)\\) to convey the information of the event \\(A\\), however, there is a more useful way to go about this. Imagine you have to find an element within a finite set only by being able to ask yes/no questions. If you want to find it efficiently, then you would like to pose each question in such a way that both a “yes” and a “no” divide the set in half. In general, if you want to find an element within a finite set only by being able to ask questions with \\(b \\geq 2\\) answers, then you should pose each question in such a way that each answer divides the space in \\(b\\) equal parts. The idea of measuring information of an event when a base \\(b\\) is fixed is the amount of questions with \\(b\\) answers that you have to ask to narrow the probability space down to that event. Quantifying this results in: \\[\n\\mathbb{P}(A) = \\left(\\frac{1}{b}\\right)^{I_b(A)}\\mathbb{P}(\\Omega)\n\\] or, by simplifying \\(\\mathbb{P}(\\Omega) = 1\\) and solving for \\(I_b(A)\\): \\[\nI_b(A) = \\log_b\\frac{1}{\\mathbb{P}(A)} = - \\log_b \\mathbb{P}(A)\n\\] Now, the choice of \\(b\\) is up to us, but its pourpouse is to tell us how much each question that we pose divides our space. Typically we use base \\(b = 2\\), in the sense that we answer yes/no type questions. Nonetheless it is useful to develop our theory for an arbitrary base \\(b\\). Thus, for a discrete random variable \\(X\\) taking values on a set \\(\\mathcal{X}\\), we have: \\[\nI_b(X = x) = -\\log_b\\mathbb{P}(X = x).\n\\] Now, if an event has probability \\(0\\) then the above is problematic. If we accept to extend \\(\\log(0) = -\\infty\\) then that event would yield infinite information. In a sense, those events are unattainable with a finite number of questions.\\ \\ Looking more closely into random variables, suppose someone gave you an outcome of \\(X \\sim P_X\\). How much information should we expect? The answer is: \\[\n\\mathbb{E}\\left[-\\log_b(P_X(X))\\right] = -\\sum_{x \\in \\mathcal{X}} P_X(x)\\log_bP_X(x).\n\\]This is the entropy (measured in base \\(b\\)) of \\(X\\), and it is the number of questions with \\(b\\) answers that you have to pose on average before figuring out the value of \\(X\\). In this light, it’s pretty clear that this quantity is always not more than \\(\\log_b|\\mathcal{X}|\\), as you can always do \\(b\\)-ary search on \\(\\mathcal{X}\\) and figure out its value. Again, there is a problem with outcomes of probability \\(0\\), however when we multiply \\(\\log(0) = -\\infty\\) (at this point we give for granted that we extend this function) by \\(0\\) this problem disappears. The reason of this can be found within measure theory, which is the context in which probability spaces are defined. In short, in measure theory there’s a need to extend the real numbers to \\([-\\infty,+\\infty]\\), and to make integrals work, there’s the convention that \\(0 \\cdot (+\\infty) = 0 \\cdot (-\\infty) = 0\\), since any integral over a set of measure zero is taken to be \\(0\\). Applying this convention we see that we don’t run into any issues.\nWe are ready to define entropy.\n\nDefinition: Entropy of a random variable\nGiven a finite set \\(\\mathcal{X}\\), a random variable \\(X:\\Omega\\longrightarrow \\mathcal{X}\\), with probability mass function \\(P_X\\), we define the entropy of \\(X\\) (or rather \\(P_X\\)) in base \\(b &gt; 1\\) as the following quantity: \\[\nH(X) = H(P_X) = -\\sum_{x \\in \\mathcal{X}} P_X(x) \\log P_X(x),\n\\] keeping in mind the convention that \\(0 \\cdot \\infty = 0\\).\n\nWe specified for correctness that this quantity needs a base \\(b\\) in order for it to be a number, but in practice it is something that we omit, since we always use:\n\nbase \\(b = 2\\) when dealing with discrete random variables, speaking of bits of information.\nbase \\(b = \\text{e}\\) when dealing with continuous random variables, speaking of nats of information.\n\n\nExample\nLet \\(\\mathcal{X} = \\{H,T\\}\\) (\\(H\\) representing “heads”, and \\(T\\) representing “tails”), and consider the random variable \\(X:\\Omega \\longrightarrow \\mathcal{X}\\) with: \\[\n\\mathbb{P}(X = H) = P_X(H) = p, \\quad \\text{and}\\quad \\mathbb{P}(X = T) = P_X(T) = 1-p,\n\\] where \\(p\\) is a given number in \\([0,1]\\). Then the entropy of this random variable, or rather of its \\(p\\)-dependent distribution is: \\[\nH(X) = p \\log\\frac{1}{p}+ (1-p)\\log\\frac{1}{1-p} =-p \\log(p) - (1-p)\\log(1-p).\n\\] First, we observe that \\(H(X)\\) doesn’t change its value if we replace \\(p\\) with \\(1-p\\). This is a hint towards a general fact: “Entropy doesn’t care about lables”; it doesn’t matter if the coin is mor or leass likely to land on heads rather than taiils, onlly how likely it is to land on one of those."
+  },
+  {
+    "objectID": "RandNLA/intro.html",
+    "href": "RandNLA/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "RandNLA/summary.html",
+    "href": "RandNLA/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "StatisticalLearning/intro.html",
+    "href": "StatisticalLearning/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "StatisticalLearning/summary.html",
+    "href": "StatisticalLearning/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
   }
 ]

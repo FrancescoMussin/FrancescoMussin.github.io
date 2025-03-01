@@ -1,9 +1,5 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+Hello! Welcome to the notes on Information Theory. These are based on the course taught at ETH by professor Lapidoth but they may include topics outside that course in the future.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+DO NOT cite this as a reference for any reason.

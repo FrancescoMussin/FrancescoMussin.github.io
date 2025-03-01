@@ -1,0 +1,21 @@
+---
+title: "Support Vector Machines"
+---
+
+In this chapter we'll get to examine the *support vector machine* (SVM), which is an effective way to do classification developed in the 90s. These classifiers are considered to be the best "out of the box" classifiers, meaning that they typically don't need much fine tuning or tweaking. The original idea for this approach for classification is quite simple and intuitive.
+
+We'll mainly focus on binary classification, later we'll see how to extend what we do for the general case of more than two classes, so we're taking the set $\mathcal{Y}$ to have cardinality $|\mathcal{Y}| = 2$. For simplicity we take $\mathcal{Y} = \{-1,+1\}$.
+
+As usual, we're going to assume that we have a sample $\{z_1,\dots,z_m\}\subseteq \mathcal{X}\times \mathcal{Y}$ of pairs $z_i = (x_i,y_i)$ distributed i.i.d. according to some distribution on $\mathcal{X}\times \mathcal{Y}$. We're going to denote:
+
+$$
+\mathcal{I}^+ = \{i \in [m]:\ y_i = 1\},\ \quad \text{and}\quad \mathcal{I}^- = \{i \in [m]:\ y_i = -1\}.
+$$
+
+## Maximal Margin Classifier
+
+The starting idea behind all of this is to separate the vectors with different labels with a hyperplane. For every $w \in \mathbb{R}^n$ with $\|w\| = 1$ and $b \in \mathbb{R}$ we denote with $\mathcal{H}(w,b)$ the hyperplane $\{x \in \mathbb{R}^n:\ w^T x = b\}$. We call the real number $b$ "offset from the origin" (it corresponds to the distance of the hyperplane to the origin). Every such hyperplane $\mathcal{H}(w,b)$ yields the binary classifier $x \longmapsto \text{sign}(w^Tx-b)$.
+
+## Support Vector Classifier
+
+## Support Vector Machines

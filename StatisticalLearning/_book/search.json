@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "StatisticalLearning",
+    "section": "",
+    "text": "Preface\nWelcome to my notes on Statistical Learning.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "svm.html",
+    "href": "svm.html",
+    "title": "2  Support Vector Machines",
+    "section": "",
+    "text": "2.1 Maximal Margin Classifier\nIn this chapter we’ll get to examine the support vector machine (SVM), which is an effective way to do classification developed in the 90s. These classifiers are considered to be the best “out of the box” classifiers, meaning that they typically don’t need much fine tuning or tweaking. The original idea for this approach for classification is quite simple and intuitive.\nWe’ll mainly focus on binary classification, later we’ll see how to extend what we do for the general case of more than two classes, so we’re taking the set \\(\\mathcal{Y}\\) to have cardinality \\(|\\mathcal{Y}| = 2\\). For simplicity we take \\(\\mathcal{Y} = \\{-1,+1\\}\\).\nAs usual, we’re going to assume that we have a sample \\(\\{z_1,\\dots,z_m\\}\\subseteq \\mathcal{X}\\times \\mathcal{Y}\\) of pairs \\(z_i = (x_i,y_i)\\) distributed i.i.d. according to some distribution on \\(\\mathcal{X}\\times \\mathcal{Y}\\). We’re going to denote:\n\\[\n\\mathcal{I}^+ = \\{i \\in [m]:\\ y_i = 1\\},\\ \\quad \\text{and}\\quad \\mathcal{I}^- = \\{i \\in [m]:\\ y_i = -1\\}.\n\\]\nThe starting idea behind all of this is to separate the vectors with different labels with a hyperplane. For every \\(w \\in \\mathbb{R}^n\\) with \\(\\|w\\| = 1\\) and \\(b \\in \\mathbb{R}\\) we denote with \\(\\mathcal{H}(w,b)\\) the hyperplane \\(\\{x \\in \\mathbb{R}^n:\\ w^T x = b\\}\\). We call the real number \\(b\\) “offset from the origin” (it corresponds to the distance of the hyperplane to the origin). Every such hyperplane \\(\\mathcal{H}(w,b)\\) yields the binary classifier \\(x \\longmapsto \\text{sign}(w^Tx-b)\\).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Support Vector Machines</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "svm.html#support-vector-classifier",
+    "href": "svm.html#support-vector-classifier",
+    "title": "2  Support Vector Machines",
+    "section": "2.2 Support Vector Classifier",
+    "text": "2.2 Support Vector Classifier",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Support Vector Machines</span>"
+    ]
+  },
+  {
+    "objectID": "svm.html#support-vector-machines",
+    "href": "svm.html#support-vector-machines",
+    "title": "2  Support Vector Machines",
+    "section": "2.3 Support Vector Machines",
+    "text": "2.3 Support Vector Machines",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Support Vector Machines</span>"
+    ]
+  }
+]
