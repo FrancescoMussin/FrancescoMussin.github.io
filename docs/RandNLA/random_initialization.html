@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quantifying Information – Francesco Mussin</title>
+<title>Random Initialization – Francesco Mussin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -140,21 +111,15 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#entropy" id="toc-entropy" class="nav-link active" data-scroll-target="#entropy">Entropy</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quantifying Information</h1>
+<h1 class="title">Random Initialization</h1>
 </div>
 
 
@@ -171,46 +136,8 @@ window.Quarto = {
 </header>
 
 
-<p>In this chapter, we’ll mainly focus on getting to know the quantities that will be the protagonists of our theorems and derivations. Those include Entropy, Relative Entropy/Cross Entropy, Conditional Entropy, Mutual Information and Conditional Mutual Information. Those are apparently “simple” concepts that in order to be fully understood require quite a deep understanding.</p>
-<section id="entropy" class="level2">
-<h2 class="anchored" data-anchor-id="entropy">Entropy</h2>
-<p>Mathematically, what is information? Well, if you imagine mathematics as a “divine” computer that figures out everything that follows from logic, the only thing that it cannot predict is randomness; if you werre to tell someone a mathematical result, like <span class="math inline">\(3\cdot 3 = 9\)</span> or <span class="math inline">\(\dim \mathbb{R}^n = n\)</span>, you’re technically not conveying any new information, since it is something that, on paper, your receiver could figure out. However, if you tell someone the outcome of a random variable, then you’re conveying some “information” that is unattainable in any other way.</p>
-<blockquote class="blockquote">
-<p>Mathematically, information is the outcome of a random variable</p>
-</blockquote>
-<p>However, not all outcomes are the same: if I knew that <span class="math inline">\(X \sim \delta_0\)</span> had take outcome <span class="math inline">\(X = 0\)</span>, I wouldn’t be surprised at all, while if <span class="math inline">\(X \sim \text{Pois}(1)\)</span>, we should be surprised when <span class="math inline">\(X = 100\)</span>. In other words, we need to measure the outcomes of random variables based on how much “surprise” they give use. Here’s another way of seeing it. Remember that when you’re in a probability space <span class="math inline">\((\Omega, \mathcal{F},\mathbb{P})\)</span> and an event <span class="math inline">\(A\in \mathcal{F}\)</span> happens, then you have to adjust the probability space to <span class="math inline">\((A,\mathcal{F}|_{A}, \mathbb{P}(\ \cdot \ |A))\)</span>. A simple way to measure how much this space changes from the original is to compute <span class="math inline">\(\mathbb{P}(A)\)</span>. The bigger this is, the less we have to change our notion of probability, because it means that most of <span class="math inline">\(\mathbb{P}\)</span>’s mass sits on <span class="math inline">\(A\)</span>, but if <span class="math inline">\(\mathbb{P}(A)\)</span> is small, then it means that you have to cut off a lot of mass from <span class="math inline">\(\mathbb{P}\)</span>, potentially making <span class="math inline">\(\mathbb{P}(\ \cdot \ |A)\)</span> behave a lot differently than <span class="math inline">\(\mathbb{P}(\ \cdot \ )\)</span> on most sets.</p>
-<p>So, in principle, we could just measure <span class="math inline">\(\mathbb{P}(A)\)</span> to convey the information of the event <span class="math inline">\(A\)</span>, however, there is a more useful way to go about this. Imagine you have to find an element within a finite set only by being able to ask yes/no questions. If you want to find it efficiently, then you would like to pose each question in such a way that both a “yes” and a “no” divide the set in half. In general, if you want to find an element within a finite set only by being able to ask questions with <span class="math inline">\(b \geq 2\)</span> answers, then you should pose each question in such a way that each answer divides the space in <span class="math inline">\(b\)</span> equal parts. The idea of measuring information of an event when a base <span class="math inline">\(b\)</span> is fixed is the amount of questions with <span class="math inline">\(b\)</span> answers that you have to ask to narrow the probability space down to that event. Quantifying this results in: <span class="math display">\[
-\mathbb{P}(A) = \left(\frac{1}{b}\right)^{I_b(A)}\mathbb{P}(\Omega)
-\]</span> or, by simplifying <span class="math inline">\(\mathbb{P}(\Omega) = 1\)</span> and solving for <span class="math inline">\(I_b(A)\)</span>: <span class="math display">\[
-I_b(A) = \log_b\frac{1}{\mathbb{P}(A)} = - \log_b \mathbb{P}(A)
-\]</span> Now, the choice of <span class="math inline">\(b\)</span> is up to us, but its pourpouse is to tell us how much each question that we pose divides our space. Typically we use base <span class="math inline">\(b = 2\)</span>, in the sense that we answer yes/no type questions. Nonetheless it is useful to develop our theory for an arbitrary base <span class="math inline">\(b\)</span>. Thus, for a discrete random variable <span class="math inline">\(X\)</span> taking values on a set <span class="math inline">\(\mathcal{X}\)</span>, we have: <span class="math display">\[
-I_b(X = x) = -\log_b\mathbb{P}(X = x).
-\]</span> Now, if an event has probability <span class="math inline">\(0\)</span> then the above is problematic. If we accept to extend <span class="math inline">\(\log(0) = -\infty\)</span> then that event would yield infinite information. In a sense, those events are unattainable with a finite number of questions.\ \ Looking more closely into random variables, suppose someone gave you an outcome of <span class="math inline">\(X \sim P_X\)</span>. How much information should we expect? The answer is: <span class="math display">\[
-\mathbb{E}\left[-\log_b(P_X(X))\right] = -\sum_{x \in \mathcal{X}} P_X(x)\log_bP_X(x).
-\]</span>This is the entropy (measured in base <span class="math inline">\(b\)</span>) of <span class="math inline">\(X\)</span>, and it is the number of questions with <span class="math inline">\(b\)</span> answers that you have to pose on average before figuring out the value of <span class="math inline">\(X\)</span>. In this light, it’s pretty clear that this quantity is always not more than <span class="math inline">\(\log_b|\mathcal{X}|\)</span>, as you can always do <span class="math inline">\(b\)</span>-ary search on <span class="math inline">\(\mathcal{X}\)</span> and figure out its value. Again, there is a problem with outcomes of probability <span class="math inline">\(0\)</span>, however when we multiply <span class="math inline">\(\log(0) = -\infty\)</span> (at this point we give for granted that we extend this function) by <span class="math inline">\(0\)</span> this problem disappears. The reason of this can be found within measure theory, which is the context in which probability spaces are defined. In short, in measure theory there’s a need to extend the real numbers to <span class="math inline">\([-\infty,+\infty]\)</span>, and to make integrals work, there’s the convention that <span class="math inline">\(0 \cdot (+\infty) = 0 \cdot (-\infty) = 0\)</span>, since any integral over a set of measure zero is taken to be <span class="math inline">\(0\)</span>. Applying this convention we see that we don’t run into any issues.</p>
-<p>We are ready to define entropy.</p>
-<div class="definition">
-<p><strong>Definition: Entropy of a random variable</strong><br>
-Given a finite set <span class="math inline">\(\mathcal{X}\)</span>, a random variable <span class="math inline">\(X:\Omega\longrightarrow \mathcal{X}\)</span>, with probability mass function <span class="math inline">\(P_X\)</span>, we define the entropy of <span class="math inline">\(X\)</span> (or rather <span class="math inline">\(P_X\)</span>) in base <span class="math inline">\(b &gt; 1\)</span> as the following quantity: <span class="math display">\[
-H(X) = H(P_X) = -\sum_{x \in \mathcal{X}} P_X(x) \log P_X(x),
-\]</span> keeping in mind the convention that <span class="math inline">\(0 \cdot \infty = 0\)</span>.</p>
-</div>
-<p>We specified for correctness that this quantity needs a base <span class="math inline">\(b\)</span> in order for it to be a number, but in practice it is something that we omit, since we always use:</p>
-<ul>
-<li><p>base <span class="math inline">\(b = 2\)</span> when dealing with discrete random variables, speaking of <em>bits</em> of information.</p></li>
-<li><p>base <span class="math inline">\(b = \text{e}\)</span> when dealing with continuous random variables, speaking of <em>nats</em> of information.</p></li>
-</ul>
-<div class="example">
-<p><strong>Example</strong><br>
-Let <span class="math inline">\(\mathcal{X} = \{H,T\}\)</span> (<span class="math inline">\(H\)</span> representing “heads”, and <span class="math inline">\(T\)</span> representing “tails”), and consider the random variable <span class="math inline">\(X:\Omega \longrightarrow \mathcal{X}\)</span> with: <span class="math display">\[
-\mathbb{P}(X = H) = P_X(H) = p, \quad \text{and}\quad \mathbb{P}(X = T) = P_X(T) = 1-p,
-\]</span> where <span class="math inline">\(p\)</span> is a given number in <span class="math inline">\([0,1]\)</span>. Then the entropy of this random variable, or rather of its <span class="math inline">\(p\)</span>-dependent distribution is: <span class="math display">\[
-H(X) = p \log\frac{1}{p}+ (1-p)\log\frac{1}{1-p} =-p \log(p) - (1-p)\log(1-p).
-\]</span> First, we observe that <span class="math inline">\(H(X)\)</span> doesn’t change its value if we replace <span class="math inline">\(p\)</span> with <span class="math inline">\(1-p\)</span>. This is a hint towards a general fact: “Entropy doesn’t care about lables”; it doesn’t matter if the coin is mor or leass likely to land on heads rather than taiils, onlly how likely it is to land on one of those.</p>
-</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -8,6 +8,8 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - monte_carlo.qmd
+    - random_initialization.qmd
     - summary.qmd
     - references.qmd
 

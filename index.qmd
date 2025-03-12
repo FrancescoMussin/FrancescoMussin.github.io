@@ -2,6 +2,7 @@
 title: "Francesco Mussin"
 subtitle: "MSc math student at ETH Zurich"
 image: propic.jpg
+resources: my-cv-ml.pdf
 about:
   template: trestles
   image-shape: round
@@ -9,17 +10,31 @@ about:
   links:
     - text: Email
       icon: envelope
-      href: francesco.mussin@gmail.com
+      href: mailto:francesco.mussin@gmail.com
     - text: GitHub
       icon: github
       href: https://github.com/FrancescoMussin
     - text: LinkedIn
       icon: linkedin
       href: https://www.linkedin.com/in/francesco-mussin-28451025a/
+    - text: Discogs
+      icon: vinyl
+      href: https://www.discogs.com/it/user/francescomussin
+    - text: Kaggle
+      href: https://www.kaggle.com/francescomussin
+    - text: YouTube
+      icon: youtube
+      href: https://www.youtube.com/@francescomussin
+    - text: MuseScore
+      icon: music-note-beamed
+      href: https://musescore.com/user/16141436
+    - text: CV
+      icon: file-text
+      href: my-cv-ml.pdf      
 ---
 # Francesco Mussin
 
-Welcome to my personal site. I put a number of things in here, including my projects, my personal notes on various topics, and more(?)
+Welcome to my personal site. I put a number of things in here, including my projects, my personal notes on various topics, and my hobbies.
 
 ## About me
 

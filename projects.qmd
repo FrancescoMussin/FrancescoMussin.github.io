@@ -6,8 +6,8 @@ Welcome to my project portfolio! Here are some of the things I've been working o
 
 ## 🚀 Project 1: Phase space
 
-- **Goal**: 
-- **Tech**: Python, TensorFlow, NLP
+- **Goal**: Using phase space techniques to understand the effect of climate change in Lombardy
+- **Tech**: R, Quarto
 - **Status**: In progress 🚧 
 - [🔗 View Project]()
 
