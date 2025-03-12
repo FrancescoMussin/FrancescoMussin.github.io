@@ -1,0 +1,14 @@
+---
+title: "Projects"
+---
+
+Welcome to my project portfolio! Here are some of the things I've been working on.
+
+## 🚀 Project 1: Phase space
+
+- **Goal**: 
+- **Tech**: Python, TensorFlow, NLP
+- **Status**: In progress 🚧 
+- [🔗 View Project]()
+
+## 🚀 Project 2: 

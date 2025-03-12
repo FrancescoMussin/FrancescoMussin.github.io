@@ -8,7 +8,11 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - personal_notes.qmd
+      - href: projects.qmd
+        text: Projects
+      - href: personal_notes.qmd
+        text: Personal Notes
+      
 
 format:
   html:
