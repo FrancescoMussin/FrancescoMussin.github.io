@@ -11,7 +11,7 @@ website:
       - href: projects.qmd
         text: Projects
       - href: personal_notes.qmd
-        text: Personal Notes
+        text: Notes
       
 
 format:

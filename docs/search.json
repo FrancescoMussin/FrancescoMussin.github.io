@@ -16,9 +16,9 @@
   {
     "objectID": "personal_notes.html",
     "href": "personal_notes.html",
-    "title": "Personal Notes",
+    "title": "Notes",
     "section": "",
-    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want.\n\n📖 Read my notes on Information Theory (under construction)\n📖 Read my notes on Statistical Learning (under construction)\n📖 Read my notes on Randomized Numerical Linear Algebra (under construction)"
+    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want."
   },
   {
     "objectID": "index.html#about-me",
@@ -250,5 +250,26 @@
     "title": "Monte Carlo methods",
     "section": "Implicit Trace Estimation",
     "text": "Implicit Trace Estimation\nThe goal is to estimate the trace of a square matrix. This might seem as a trivial task, since if \\(A\\in \\mathbb{R}^{n\\times n}\\), then its trace is just a matter of \\(n\\) additions. However this can be computationally demanding whenever we don’t have immediate access to the diagonal elements of \\(A\\).\nAs an example, take a network with a huge adjacency matrix \\(A\\). Counting how many triangles are in this graph is equivalent to computing \\(\\text{tr}(A^3)\\). Clearly when the graph is very big computing the trace in the naive way is not necessarily the best way of going about the problem.\nInstead of assuming constant time access to the entries of the matrix, we’re going to assume that we can perform the matrix-vector product \\(x \\longmapsto Ax\\) at a reasonable cost. These operations are called matvecs for short. This assumption would allow us to get the elements of our matrix at a reasonable cost, simply note that \\(e_i^T A e_j = A_{ij}\\) for all \\(i,j\\in [n]\\), where \\(e_i\\) denotes the \\(i\\)th vector of \\(\\mathbb{R}^n\\)’s canonical basis. Thus, even with being able to compute matvecs at a scalable speed, we still can compute the trace of \\(A\\) in \\(O(n)\\) time. However when \\(n\\) is very large this might not be good enough.\nThe solution is to use randomness.\n\nThe Idea\n\nIsotropic distribution\n\nA distribution \\(\\mu\\) on \\(\\mathbb{R}^n\\) is said to be isotropic if given \\(x\\sim \\mu\\), it holds \\(\\mathbb{E}[x x^T] = I_n\\).\n\n\nExamples of such distributions include:\n\nThe standard normal distribution on \\(\\mathbb{R}^n\\). If \\(x \\sim N(0,I_n)\\), then \\((xx^T)_{ij} = x_i x_j\\), so taking the expected value we get the expected value of \\(\\chi_1^2\\) on the diagonal which is \\(1\\), and the expected value of the product of two independent standard normals outside the diagonal, which amounts to \\(0\\).\nThe uniform distribution on \\(\\{\\pm 1\\}^n\\). Realizing this comes down to very similar steps to the ones made for the normal distribution.\nThe uniform distribution on the sphere on the origin and of radius \\(\\sqrt{n}\\).\n\nNow, observe that if \\(x\\in \\mathbb{R}^n\\) is a random vector from an isotropic distribution, then the random variable \\(Y = x^T A x\\) has an interesting property, namely \\(\\mathbb{E}[Y] = \\text{tr}(A)\\). To see this, first note that \\(Y = x^T A x = \\text{tr}(x^TAx)\\), and that due to the cyclic properties of the trace, we can even write \\(Y = \\text{tr}(Ax x^T)\\). Having this inside an expected value isn’t much of a big deal, as trace and expectation commute (just write down what the trace is and you see this immediately), so\n\\[\n\\mathbb{E}[Y] = \\mathbb{E}[\\text{tr}(x^TAx)] = \\mathbb{E}[\\text{tr}(Axx^T)] = \\text{tr}(\\mathbb{E}[A x x^T]) = \\text{tr}(A\\mathbb{E}[x x^T]) = \\text{tr}(A).\n\\]\nWith this, we can just take a number \\(s\\) of samples \\(x_1,\\dots,x_s\\) from the isotropic distribution, compute \\(y_i = x_i^T A x_i\\), and take the mean:\n\\[\n\\widehat{\\text{tr}}_s(A) = \\frac{1}{s} \\sum_{i = 1}^s y_i = \\frac{1}{s} \\sum_{i = 1}^s x_i^T A x_i.\n\\]\nTaking the expectation of \\(\\widehat{\\text{tr}}_s(A)\\) would yield \\(\\text{tr}(A)\\) because of linearity, so this is an unbiased estimator of the trace. Concerning the variance, we have:\n\\[\n\\text{Var}[\\widehat{\\text{tr}}_s(A)] = \\frac{1}{s} \\text{Var}[x^T A x],\n\\]\nso our immediate unbiased estimator of the variance is:\n\\[\n\\widehat{\\nu}_s(A) = \\frac{1}{s(s-1)} \\sum_{i = 1}^s (y_i - \\widehat{\\text{tr}}_s(A))^2\n\\]\n\n\nBounds on the error\nAs of this moment, we have no idea of the number \\(s\\) of samples needed to get a useful estimate of the trace. To this end, we can rely on statistics. As it turns out, if the distribution of \\(x\\) has four finite moments, meaning \\(\\| x\\|_2^4\\) has finite expectation, then:\n\\[\n\\mathbb{E}[\\widehat{\\nu}_s(A)] = \\text{Var}[\\widehat{\\text{tr}}_s(A)]\n\\]"
+  },
+  {
+    "objectID": "personal_notes.html#notes-from-courses-from-my-bachelors-studies",
+    "href": "personal_notes.html#notes-from-courses-from-my-bachelors-studies",
+    "title": "Notes",
+    "section": "Notes from courses from my bachelor’s studies",
+    "text": "Notes from courses from my bachelor’s studies\nThis is a collection of LaTeX notes taken from courses taught at UniMiB when I was a mathematics Bachelor’s student. They are only available in italian as that was the language of instruction of the material.\n\n📖 Analisi Complessa\n📖 Teoria della Probabilità"
+  },
+  {
+    "objectID": "personal_notes.html#notes-from-courses-from-my-masters-studies",
+    "href": "personal_notes.html#notes-from-courses-from-my-masters-studies",
+    "title": "Notes",
+    "section": "Notes from courses from my Master’s studies",
+    "text": "Notes from courses from my Master’s studies\n\n📖 Read my notes on Information Theory (under construction)\n📖 Read my notes on Statistical Learning (under construction)"
+  },
+  {
+    "objectID": "personal_notes.html#other-notes",
+    "href": "personal_notes.html#other-notes",
+    "title": "Notes",
+    "section": "Other notes",
+    "text": "Other notes\n\n📖 Read my notes on Randomized Numerical Linear Algebra (under construction)"
   }
 ]
