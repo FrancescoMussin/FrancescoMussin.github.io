@@ -2,5 +2,12 @@
   {
     "listing": "/Projects/projects.html",
     "items": []
+  },
+  {
+    "listing": "/Transcriptions/index.html",
+    "items": [
+      "/Transcriptions/posts/post-with-code/index.html",
+      "/Transcriptions/posts/welcome/index.html"
+    ]
   }
 ]
