@@ -13,7 +13,6 @@ website:
       - href: personal_notes.qmd
         text: Notes
       
-
 format:
   html:
     theme: sandstone

@@ -4,7 +4,7 @@ title: "Projects"
 
 Welcome to my project portfolio! Here are some of the things I've been working on.
 
-## 🚀 Project 1: Phase space
+## 🚀 Project 1: Phase space techniques for climate change
 
 - **Goal**: Using phase space techniques to understand the effect of climate change in Lombardy
 - **Tech**: R, Quarto
