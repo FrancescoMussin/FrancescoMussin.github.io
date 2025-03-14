@@ -1,0 +1,210 @@
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools} %amsmath ma meglio
+\usepackage{amsfonts, amssymb, amsthm} %altri pacchetti di ams
+\usepackage{mathrsfs} %corsivo bello
+\usepackage{graphicx} %per le immagini
+\graphicspath{{c:/Users/39349/OneDrive/Desktop/Sito/FrancescoMussin.github.io/StatisticaMatematica/StatisticaMatematicaImmagini}}
+\usepackage{microtype} %riduce i warning di hbox
+\usepackage{tikz} %tikz
+\usetikzlibrary{shapes.geometric, arrows.meta, decorations.markings, hobby, patterns, decorations.pathreplacing,calligraphy, calc, intersections}
+\usepackage{tikz-cd} %diagrammi commutativi
+\usepackage{tikz-3dplot} %immagini in 3d
+\usepackage{xcolor} %colori
+\usepackage{booktabs} %per una eventuale bibliografia
+\usepackage{fancyhdr} %intestazione pagina
+\usepackage[english]{babel} %italiano
+\usepackage[top= 3cm, bottom=2cm, left=2cm, right=2cm]{geometry} %setta i margini
+\usepackage{upgreek} %font del greco
+\usepackage{wrapfig} % Per mettere le figure on the side
+\usepackage{lmodern} %font
+\usepackage[T1]{fontenc}
+\usepackage{bm} %bold per i caratteri speciali
+\usepackage{relsize} %Per il comando della trasposta
+\usepackage{array} %Per la tabella nella copertina
+\usepackage{dirtytalk} % per le virgolette fatte bene
+\usepackage{float} % better figure placement
+\usepackage{hyperref} %per i link cliccabili
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=black
+}
+\usepackage[backend = biber, style = alphabetic, sorting = ynt]{biblatex}
+\addbibresource{Bibliografia.bib}
+%
+% Comando dell \barra{}
+%
+\let\oldstylenums\oldstyle
+\makeatletter
+\newsavebox\myboxA
+\newsavebox\myboxB
+\newlength\mylenA
+
+\newcommand*\xoverline[2][0.75]{%
+    \sbox{\myboxA}{$\m@th#2$}%
+    \setbox\myboxB\null% Phantom box
+    \ht\myboxB=\ht\myboxA%
+    \dp\myboxB=\dp\myboxA%
+    \wd\myboxB=#1\wd\myboxA% Scale phantom
+    \sbox\myboxB{$\m@th\overline{\copy\myboxB}$}%  Overlined phantom
+    \setlength\mylenA{\the\wd\myboxA}%   calc width diff
+    \addtolength\mylenA{-\the\wd\myboxB}%
+    \ifdim\wd\myboxB<\wd\myboxA%
+       \rlap{\hskip 0.5\mylenA\usebox\myboxB}{\usebox\myboxA}%
+    \else
+        \hskip -0.5\mylenA\rlap{\usebox\myboxA}{\hskip 0.5\mylenA\usebox\myboxB}%
+    \fi}
+\makeatother
+
+%
+% AMSTHM
+%
+\newtheoremstyle{Definizione}% hnamei
+{3pt}% hSpace abovei
+{3pt}% hSpace belowi
+{\slshape}% hBody fonti
+{}% hIndent amounti
+{\bfseries}% hTheorem head fonti
+{:}% hPunctuation after theorem headi
+{.5em}% hSpace after theorem headi
+{}% hTheorem head spec (can be left empty, meaning ‘normal’)i
+
+\newtheoremstyle{TeoremaProposizioneLemmaCorollarioCongettura}% hnamei
+{3pt}% hSpace abovei
+{3pt}% hSpace belowi
+{\slshape}% hBody fonti
+{}% hIndent amounti
+{\bfseries}% hTheorem head fonti
+{:}% hPunctuation after theorem headi
+{.5em}% hSpace after theorem headi
+{}% hTheorem head spec (can be left empty, meaning ‘normal’)i
+
+\newtheoremstyle{OsservazioneNotaEsempio}% hnamei
+{3pt}% hSpace abovei
+{3pt}% hSpace belowi
+{}% hBody fonti
+{}% hIndent amounti
+{\slshape}% hTheorem head fonti
+{\textup{:}}% hPunctuation after theorem headi
+{.5em}% hSpace after theorem headi
+{}% hTheorem head spec (can be left empty, meaning ‘normal’)i
+
+\theoremstyle{Definizione}
+\newtheorem*{mydef}{Definition}
+\theoremstyle{TeoremaProposizioneLemmaCorollarioCongettura}
+\newtheorem{myteo}{Theorem}[section]
+\newtheorem{mylem}[myteo]{Lemma}
+\newtheorem{mycor}[myteo]{Corollary}
+\newtheorem{mypropo}[myteo]{Proposition}
+\theoremstyle{OsservazioneNotaEsempio}
+\newtheorem{myobs}{Observation}[section]
+\newtheorem*{mynota}{Remark}
+\newtheorem{myes}{Example}[section]
+%
+% FANCYHDR
+%
+\fancyhf{}% LaTeX ha un default pagestyle, questo comando lo disabilita e lascia tutto in blank
+\pagestyle{fancy} % Abilita la customizzazione data da fancyhdr
+\fancyhead[LE]{\thepage}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+%
+% PROOF ENVIRONMENT
+%
+%
+% modifica della scritta "Dimostrazione" dell'environment \proof
+%
+%\renewenvironment{proof}{\textsl{Dimostrazione}.}{}
+\newenvironment{myproof}{\renewcommand{\proofname}{\textsl{Dimostrazione}}\begin{proof}}{\end{proof}}
+
+
+%
+% COMANDI
+%
+\newcommand{\barra}[1]{\xoverline[1.0]{#1}}
+\newcommand{\vet}[1]{\underline{#1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\id}[1]{\textup{id}_{{#1}}}
+\renewcommand{\d}{\textup{d}}
+\newcommand{\supp}{\textup{supp}}
+\newcommand{\Ker}{\textup{Ker}}
+\newcommand{\Aut}{\textup{Aut}}
+\newcommand{\Hom}{\textup{Hom}}
+\newcommand{\SO}{\textup{SO}}
+\newcommand{\trasp}[1]{\prescript{\textup{t}}{}{#1}}
+\newcommand{\graph}{\textup{graph}}
+\renewcommand{\top}{\tau}
+\newcommand{\loc}{\textup{loc}}
+\newcommand{\gro}[1]{\textbf{\textup{#1}}}
+\newcommand{\sub}[2]{{#1}|_{{#2}}}
+\newcommand{\tolto}{\smallsetminus}
+\newcommand{\prsc}[3][]{\left\langle {#2},{#3}\right\rangle_{#1}}
+\newcommand{\prscFix}[3][]{\langle {#2},{#3}\rangle_{#1}}
+\newcommand{\pr}{\textup{pr}}
+\newcommand{\gri}[1]{\textbf{\textit{{#1}}}}
+\newcommand{\leftdb}{$[\![$}
+\newcommand{\rightdb}{$]\!]$}
+\newcommand{\uno}[1]{\mathds{1}_{#1}}
+\newcommand{\conv}{\textup{conv}}
+\newcommand{\ex}{\textup{ex}}
+\newcommand{\e}{\textup{e}}
+\newcommand{\myb}[1]{\bm{{#1}}}
+\newcommand{\leb}{m}
+\newcommand{\lebnorm}{\hat{m}}
+\renewcommand{\i}{\textup{i}}
+\renewcommand{\Re}{\textup{Re}}
+\renewcommand{\Im}{\textup{Im}}
+\newcommand{\dist}{\textup{dist}}
+\newcommand{\myspan}{\textup{span}}
+\newcommand{\sign}{\textup{sign}}
+\newcommand{\cnv}{*}
+\DeclareMathOperator*{\esssup}{ess\,sup}
+\newcommand{\dual}{*}
+\newcommand{\ev}{\textup{ev}}
+\newcommand{\trasl}[1]{\lambda({#1})}
+\newcommand{\HS}{\textup{HS}}
+\newcommand{\Homeo}{\textup{Homeo}}
+\newcommand{\Bernoulli}{\textsc{Be}}
+\newcommand{\Normal}{\mathcal{N}}
+%
+% COMANDI TIKZ
+%
+\newcommand{\arrowIn}{
+\tikz \draw[-latex] (-6pt,0) -- (6pt,0);
+}
+\newcommand{\arrowOut}{
+\tikz \draw[stealth-] (-6pt,0) -- (6pt,0);
+}
+
+\newcommand{\frecciaIn}{
+\tikz \draw[-latex] (-1pt,0) -- (1pt,0);
+}
+
+\newcommand{\frecciaOut}{
+\tikz \draw[latex-] (-1pt,0) -- (1pt,0);
+}
+%
+% QUALITY OF LIFE CHANGES
+%
+% \centra{} serve per gli environment di alignat dove voglio centrare in simbolo in una colonna.
+\newcommand*\centra[1]{\omit\hfil$\displaystyle#1$\hfil\ignorespaces}
+
+%
+% COLORI PER TIKZ
+%
+\definecolor{cof}{RGB}{219,144,71}
+\definecolor{pur}{RGB}{186,146,162}
+\definecolor{greeo}{RGB}{91,173,69}
+\definecolor{greet}{RGB}{52,111,72}

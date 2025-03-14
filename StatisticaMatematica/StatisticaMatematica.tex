@@ -1,0 +1,34 @@
+\documentclass[11pt]{book}
+
+\usepackage{StatisticaMatematica}
+
+\begin{document}
+\tableofcontents
+\chapter{Introduzione}
+Che cosa vogliamo fare in statistica? Supponendo di avere a disposizione dei dati sperimentali che rappresentano solo una parte dei casi possibili che vogliamo studiare, vogliamo dire, con relativa confidenza, qualcosa su tutti i casi possibili.\\
+\\
+Mentre nel calcolo delle probabilità ci viene assegnato uno spazio di probabilità su cui poi fare calcoli, in statistica ci viene assegnata una famiglia di spazi di probabilità, per poi capire quale tra questi rappresenta al meglio i dati forniti.\\
+\\
+Partiamo con un paio di definizioni basilari giusto per fissare i termini.
+
+\begin{mydef}
+Chiamiamo popolazione obietivo la totalità degli elementi in esame, ciò su cui vogliamo ottenere informazioni.
+\end{mydef}
+\noindent
+Ad esempio:
+\begin{itemize}
+\item In un sondaggio politico (per delle elezioni) la popolazione obiettivo è tutto l'elettorato.
+\item Se vogliamo studiare i lanci di una particolare moneta, la popolazione obiettivo consiste in tutte le sequenze infinite di teste e croci che matematicamente, indentificando queste con $0$ ed $1$, sarebbe $\{0,1\}^\N$.
+\end{itemize}
+In statistica la parte della popolazione obiettivo su cui abbiamo informazioni viene chiamata campione casuale (casuale perché vogliamo che essa rappresenti fedelmente la popolazione obiettivo).
+\begin{mydef}
+Un modello statistico parametrico è una famiglia $\{(\Omega,\mathcal{F},\P_\theta)\}_{\theta \in \Theta}$ di spazi di probabilità sul medesimo spazio misurabile $(\Omega,\mathcal{F})$. L'insieme $\Theta$ è detto spazio dei parametri.
+\end{mydef}
+\noindent
+Supporremo sempre l'esistenza di un $\theta \in \Theta$ che dia il modello \say{corretto}.\\
+I valori in $\Theta$ sarebbero i parametri delle varie distribuzioni che già conosci: Ad esempio:
+\begin{itemize}
+\item $\{(\R,\mathcal{B}(\R),\Bernoulli(p))\}_{p \in [0,1]}$ è un modello statistico parametrico.
+\item $\{(\R,\mathcal{B}(\R), \Normal(\mu,\sigma^2)\}_{(\mu,\sigma^2) \in \R \times (0,+\infty)}$ è un modello statistico parametrico.
+\end{itemize}
+\end{document}
