@@ -10,7 +10,7 @@ resources: FourMichaelMayo.pdf
 
 Here are the relevant links:
 
--   [📖 pdf](FourMichaelMayo.pdf)
+-   [🎼 pdf](FourMichaelMayo.pdf)
 
 
 In the future there might be an Analysis, stay tuned!
