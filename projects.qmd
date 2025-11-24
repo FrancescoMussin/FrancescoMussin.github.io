@@ -4,10 +4,12 @@ title: "Projects"
 
 Welcome to my project portfolio! Here are some of the things I've been working on.
 
-## 🚀 Project 1: Phase space techniques for climate change
+## 🚀 Project 1: TSP Art 🖌️🎨
 
-- **Goal**: Using phase space techniques to understand the effect of climate change in Lombardy
-- **Tech**: R, Quarto
+The TSP ([Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem)) is one of the grand daddies of computational problems. Given a set of locations, the goal is to find a tour passing through all of them one by one in such a way as to minimize the total distance traveled. So many people have been studying this problem that along the way some came up with something known as **TSP art**: in short, this idea consists of taking an image, sampling a set of points from it (often from its edges or contours), and computing a TSP tour that connects these points in a single continuous line. The result is a clean, elegant drawing that resembles the original picture but is produced entirely from one uninterrupted path — almost like drawing the whole image without ever lifting the pen.
+
+- **Goal**: Create visually appealing TSP art by converting images into point sets and generating Travelling Salesman Problem tours that form continuous line-drawings. The aim is both to **print beautiful, minimalist artworks** and to **experiment with different TSP solvers** to compare performance and aesthetic outcomes.
+- **Tech**: Implemented in **Rust**, exploring various algorithms (exact, heuristic, and metaheuristic) for generating efficient and visually pleasing TSP paths.
 - **Status**: In progress 🚧 
 - [🔗 View Project]()
 
