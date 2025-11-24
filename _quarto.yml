@@ -12,7 +12,9 @@ website:
         text: Projects
       - href: personal_notes.qmd
         text: Notes
-      
+      - href: Transcriptions/index.qmd
+        text: Transcriptions
+       
 format:
   html:
     theme: sandstone

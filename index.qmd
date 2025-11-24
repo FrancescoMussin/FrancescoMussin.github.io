@@ -20,8 +20,6 @@ about:
     - text: Discogs
       icon: vinyl
       href: https://www.discogs.com/it/user/francescomussin
-    - text: Kaggle
-      href: https://www.kaggle.com/francescomussin
     - text: YouTube
       icon: youtube
       href: https://www.youtube.com/@francescomussin
