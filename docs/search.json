@@ -137,7 +137,7 @@
     "href": "projects.html#cvrp-vrptw-local-search-optimization",
     "title": "Projects",
     "section": "CVRP & VRPTW local search optimization",
-    "text": "CVRP & VRPTW local search optimization\nThe VRP ([Vehicle Routing Problem])(https://en.wikipedia.org/wiki/Vehicle_routing_problem) is one of the most widely applied computational problems in practice. As it turns out, ETHZ has a collaboration with SwissPost in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost taylors the algorithms they’re given to their specific needs. You can find out more here and here\n\nGoal: Improve the local search routine within the IFOR algorithm.\nTech: Implemented in Rust 🦀, every part.\nStatus: In progress 🚧 (and looking promising!💪)"
+    "text": "CVRP & VRPTW local search optimization\nThe Vehicle Routing Problem (VRP) is one of the most widely applied computational problems in practice. As it turns out, ETHZ has a collaboration with SwissPost in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost tailors the algorithms they’re given to their specific needs. You can find out more here and here\n\nGoal: Improve the local search routine within the IFOR algorithm.\nTech: Implemented in Rust 🦀, every part.\nStatus: In progress 🚧 (and looking promising!💪)"
   },
   {
     "objectID": "projects.html#tsp-art",

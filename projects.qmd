@@ -6,10 +6,10 @@ Welcome to my project portfolio! Here are some of the things I've been working o
 
 ## CVRP & VRPTW local search optimization
 
-The VRP ([Vehicle Routing Problem])(https://en.wikipedia.org/wiki/Vehicle_routing_problem) is one of the most widely applied computational problems in practice. As it turns out, ETHZ has a collaboration with SwissPost in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost taylors the algorithms they're given to their specific needs. You can find out more [here](https://www.post.ch/en/about-us/news/2025/route-optimization-for-mail-carriers-in-collaboration-with-eth-zurich) and [here](https://math.ethz.ch/news-and-events/news/d-math-news/2025/10/from-mathematics-to-vehicle-routing-and-back.html)
+The [Vehicle Routing Problem](https://en.wikipedia.org/wiki/Vehicle_routing_problem) (VRP) is one of the most widely applied computational problems in practice. As it turns out, **ETHZ** has a **collaboration with SwissPost** in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost tailors the algorithms they're given to their specific needs. You can find out more [here](https://www.post.ch/en/about-us/news/2025/route-optimization-for-mail-carriers-in-collaboration-with-eth-zurich) and [here](https://math.ethz.ch/news-and-events/news/d-math-news/2025/10/from-mathematics-to-vehicle-routing-and-back.html)
 
 - **Goal**: Improve the local search routine within the IFOR algorithm.
-- **Tech**: Implemented in *Rust* 🦀, every part.
+- **Tech**: Implemented in **Rust** 🦀, every part.
 - **Status**: In progress 🚧 (and looking promising!💪)
 
 
