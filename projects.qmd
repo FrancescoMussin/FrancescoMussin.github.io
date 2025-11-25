@@ -4,25 +4,25 @@ title: "Projects"
 
 Welcome to my project portfolio! Here are some of the things I've been working on.
 
-## CVRP & VRPTW local search optimization
+## CVRP & VRPTW local search optimization 🚚
 
 The [Vehicle Routing Problem](https://en.wikipedia.org/wiki/Vehicle_routing_problem) (VRP) is one of the most widely applied computational problems in practice. As it turns out, **ETHZ** has a **collaboration with SwissPost** in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost tailors the algorithms they're given to their specific needs. You can find out more [here](https://www.post.ch/en/about-us/news/2025/route-optimization-for-mail-carriers-in-collaboration-with-eth-zurich) and [here](https://math.ethz.ch/news-and-events/news/d-math-news/2025/10/from-mathematics-to-vehicle-routing-and-back.html)
 
-- **Goal**: Improve the local search routine within the IFOR algorithm.
+- **Goal**: Improve the local search routine within **IFOR**'s algorithm.
 - **Tech**: Implemented in **Rust** 🦀, every part.
 - **Status**: In progress 🚧 (and looking promising!💪)
 
 
 ## TSP Art 🖌️🎨
 
-The TSP ([Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem)) is one of the grand daddies of computational problems. Given a set of locations, the goal is to find a tour passing through all of them one by one in such a way as to minimize the total distance traveled. So many people have been studying this problem that along the way some came up with something known as **TSP art**: in short, this idea consists of taking an image, sampling a set of points from it (often from its edges or contours), and computing a TSP tour that connects these points in a single continuous line. The result is a clean, elegant drawing that resembles the original picture but is produced entirely from one uninterrupted path — almost like drawing the whole image without ever lifting the pen.
+The [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) (TSP) is one of the grand daddies of computational problems. Given a set of locations, the goal is to find a tour passing through all of them one by one in such a way as to minimize the total distance traveled. So many people have been studying this problem that along the way some came up with something known as **TSP art**: in short, this idea consists of taking an image, sampling a set of points from it (often from its edges or contours), and computing a TSP tour that connects these points in a single continuous line. The result is a clean, elegant drawing that resembles the original picture but is produced entirely from one uninterrupted path — almost like drawing the whole image without ever lifting the pen.
 
 - **Goal**: Create visually appealing TSP art by converting images into point sets and generating Travelling Salesman Problem tours that form continuous line-drawings. The aim is both to **print beautiful, minimalist artworks** and to **experiment with different TSP solvers** to compare performance and aesthetic outcomes.
 - **Tech**: Implemented in **Rust** 🦀, exploring various algorithms (exact, heuristic, and metaheuristic) for generating efficient and visually pleasing TSP paths.
 - **Status**: In progress 🚧 
 - [🔗 View Project](https://github.com/FrancescoMussin/TSP-art/tree/master)
 
-## My site
+## My site 🌐
 
 I mean this doesn't need much of an introduction, doesn't it? 
 

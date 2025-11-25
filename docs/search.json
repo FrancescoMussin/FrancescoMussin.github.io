@@ -11,7 +11,7 @@
     "href": "Transcriptions/index.html",
     "title": "Transcriptions",
     "section": "",
-    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFour - Michael Mayo’s solo transcribed for Tenor Saxophone\n\n\n\n\n\nMy transcription of Michael Mayo’s solo on Four (from his album ‘Fly’) adapted to Tenor Saxophone\n\n\n\n\n\nMar 13, 2025\n\n\nFrancesco Mussin\n\n\n\n\n\n\nNo matching items"
+    "text": "myblog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFour - Michael Mayo’s solo transcribed for Tenor Saxophone\n\n\n\n\n\nMy transcription of Michael Mayo’s solo on Four (from his album ‘Fly’) adapted to Tenor Saxophone\n\n\n\n\n\nMar 13, 2025\n\n\nFrancesco Mussin\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "RandNLA/references.html",
@@ -46,7 +46,7 @@
     "href": "personal_notes.html",
     "title": "Notes",
     "section": "",
-    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want."
+    "text": "Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more physical notebooks or tex files that aren’t stored on all my devices, here I can access everything I want."
   },
   {
     "objectID": "personal_notes.html#notes-from-courses-from-my-bachelors-studies",
@@ -136,22 +136,22 @@
     "objectID": "projects.html#cvrp-vrptw-local-search-optimization",
     "href": "projects.html#cvrp-vrptw-local-search-optimization",
     "title": "Projects",
-    "section": "CVRP & VRPTW local search optimization",
-    "text": "CVRP & VRPTW local search optimization\nThe Vehicle Routing Problem (VRP) is one of the most widely applied computational problems in practice. As it turns out, ETHZ has a collaboration with SwissPost in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost tailors the algorithms they’re given to their specific needs. You can find out more here and here\n\nGoal: Improve the local search routine within the IFOR algorithm.\nTech: Implemented in Rust 🦀, every part.\nStatus: In progress 🚧 (and looking promising!💪)"
+    "section": "CVRP & VRPTW local search optimization 🚚",
+    "text": "CVRP & VRPTW local search optimization 🚚\nThe Vehicle Routing Problem (VRP) is one of the most widely applied computational problems in practice. As it turns out, ETHZ has a collaboration with SwissPost in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost tailors the algorithms they’re given to their specific needs. You can find out more here and here\n\nGoal: Improve the local search routine within IFOR’s algorithm.\nTech: Implemented in Rust 🦀, every part.\nStatus: In progress 🚧 (and looking promising!💪)"
   },
   {
     "objectID": "projects.html#tsp-art",
     "href": "projects.html#tsp-art",
     "title": "Projects",
     "section": "TSP Art 🖌️🎨",
-    "text": "TSP Art 🖌️🎨\nThe TSP (Traveling Salesman Problem) is one of the grand daddies of computational problems. Given a set of locations, the goal is to find a tour passing through all of them one by one in such a way as to minimize the total distance traveled. So many people have been studying this problem that along the way some came up with something known as TSP art: in short, this idea consists of taking an image, sampling a set of points from it (often from its edges or contours), and computing a TSP tour that connects these points in a single continuous line. The result is a clean, elegant drawing that resembles the original picture but is produced entirely from one uninterrupted path — almost like drawing the whole image without ever lifting the pen.\n\nGoal: Create visually appealing TSP art by converting images into point sets and generating Travelling Salesman Problem tours that form continuous line-drawings. The aim is both to print beautiful, minimalist artworks and to experiment with different TSP solvers to compare performance and aesthetic outcomes.\nTech: Implemented in Rust 🦀, exploring various algorithms (exact, heuristic, and metaheuristic) for generating efficient and visually pleasing TSP paths.\nStatus: In progress 🚧\n🔗 View Project"
+    "text": "TSP Art 🖌️🎨\nThe Traveling Salesman Problem (TSP) is one of the grand daddies of computational problems. Given a set of locations, the goal is to find a tour passing through all of them one by one in such a way as to minimize the total distance traveled. So many people have been studying this problem that along the way some came up with something known as TSP art: in short, this idea consists of taking an image, sampling a set of points from it (often from its edges or contours), and computing a TSP tour that connects these points in a single continuous line. The result is a clean, elegant drawing that resembles the original picture but is produced entirely from one uninterrupted path — almost like drawing the whole image without ever lifting the pen.\n\nGoal: Create visually appealing TSP art by converting images into point sets and generating Travelling Salesman Problem tours that form continuous line-drawings. The aim is both to print beautiful, minimalist artworks and to experiment with different TSP solvers to compare performance and aesthetic outcomes.\nTech: Implemented in Rust 🦀, exploring various algorithms (exact, heuristic, and metaheuristic) for generating efficient and visually pleasing TSP paths.\nStatus: In progress 🚧\n🔗 View Project"
   },
   {
     "objectID": "projects.html#my-site",
     "href": "projects.html#my-site",
     "title": "Projects",
-    "section": "My site",
-    "text": "My site\nI mean this doesn’t need much of an introduction, doesn’t it?\nOn a more serious note, this site has been made using Quarto, which is a fantastic tool for data scientists that can do many things:\n\n✍️ Documents: Single reports and articles (HTML, PDF, MS Word, ODT, etc.).\n💻 Notebooks: Rendered Jupyter Notebooks with enhanced styling and formatting.\n📊 Presentations: Dynamic slide decks (RevealJS/HTML slides and PowerPoint).\n🌐 Websites: Collections of documents and pages with navigation and cross-linking.\n📚 Books: Multi-chapter projects with comprehensive numbering, cross-references, and a table of contents.\n📰 Blogs: Easy-to-manage sites for sharing articles and posts (using Quarto’s quarto publish feature).\n📈 Dashboards: Interactive reports, often leveraging Observable JS.\n\nYou can find out more here"
+    "section": "My site 🌐",
+    "text": "My site 🌐\nI mean this doesn’t need much of an introduction, doesn’t it?\nOn a more serious note, this site has been made using Quarto, which is a fantastic tool for data scientists that can do many things:\n\n✍️ Documents: Single reports and articles (HTML, PDF, MS Word, ODT, etc.).\n💻 Notebooks: Rendered Jupyter Notebooks with enhanced styling and formatting.\n📊 Presentations: Dynamic slide decks (RevealJS/HTML slides and PowerPoint).\n🌐 Websites: Collections of documents and pages with navigation and cross-linking.\n📚 Books: Multi-chapter projects with comprehensive numbering, cross-references, and a table of contents.\n📰 Blogs: Easy-to-manage sites for sharing articles and posts (using Quarto’s quarto publish feature).\n📈 Dashboards: Interactive reports, often leveraging Observable JS.\n\nYou can find out more here"
   },
   {
     "objectID": "RandNLA/intro.html",
@@ -170,7 +170,7 @@
   {
     "objectID": "Transcriptions/posts/index.html",
     "href": "Transcriptions/posts/index.html",
-    "title": "Posts",
+    "title": "myblog",
     "section": "",
     "text": "Four - Michael Mayo’s solo transcribed for Tenor Saxophone\n\n\n\n\n\nMy transcription of Michael Mayo’s solo on Four (from his album ‘Fly’) adapted to Tenor Saxophone\n\n\n\n\n\nMar 13, 2025\n\n\nFrancesco Mussin\n\n\n\n\n\n\nNo matching items"
   }

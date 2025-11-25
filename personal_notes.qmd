@@ -7,7 +7,7 @@ resources: AnalisiComplessa/AnComp.pdf
            TesiTriennale/TesiTriennalePresentazioneFrancescoMussin866633.pdf
 ---
 
-Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more phisical notebooks or tex files that aren't stored on all my devices, here I can access everything I want.
+Throughout my academic carreer I have been making LaTeX notes on essentially every course I took. This was a way to store everything I needed to know digitally. Too much later I realized that the best way to do that was with a site, so here we are: no more physical notebooks or tex files that aren't stored on all my devices, here I can access everything I want.
 
 ## Notes from courses from my bachelor's studies
 
