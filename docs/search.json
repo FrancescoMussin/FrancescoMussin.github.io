@@ -133,18 +133,25 @@
     "text": "Welcome to my project portfolio! Here are some of the things I’ve been working on."
   },
   {
-    "objectID": "projects.html#project-1-tsp-art",
-    "href": "projects.html#project-1-tsp-art",
+    "objectID": "projects.html#cvrp-vrptw-local-search-optimization",
+    "href": "projects.html#cvrp-vrptw-local-search-optimization",
     "title": "Projects",
-    "section": "🚀 Project 1: TSP Art 🖌️🎨",
-    "text": "🚀 Project 1: TSP Art 🖌️🎨\nThe TSP (Traveling Salesman Problem) is one of the grand daddies of computational problems. Given a set of locations, the goal is to find a tour passing through all of them one by one in such a way as to minimize the total distance traveled. So many people have been studying this problem that along the way some came up with something known as TSP art: in short, this idea consists of taking an image, sampling a set of points from it (often from its edges or contours), and computing a TSP tour that connects these points in a single continuous line. The result is a clean, elegant drawing that resembles the original picture but is produced entirely from one uninterrupted path — almost like drawing the whole image without ever lifting the pen.\n\nGoal: Create visually appealing TSP art by converting images into point sets and generating Travelling Salesman Problem tours that form continuous line-drawings. The aim is both to print beautiful, minimalist artworks and to experiment with different TSP solvers to compare performance and aesthetic outcomes.\nTech: Implemented in Rust, exploring various algorithms (exact, heuristic, and metaheuristic) for generating efficient and visually pleasing TSP paths.\nStatus: In progress 🚧\n🔗 View Project"
+    "section": "CVRP & VRPTW local search optimization",
+    "text": "CVRP & VRPTW local search optimization\nThe VRP ([Vehicle Routing Problem])(https://en.wikipedia.org/wiki/Vehicle_routing_problem) is one of the most widely applied computational problems in practice. As it turns out, ETHZ has a collaboration with SwissPost in which university researchers provide new ways of thinking about this combinatorial optimization problem, and in which the team at SwissPost taylors the algorithms they’re given to their specific needs. You can find out more here and here\n\nGoal: Improve the local search routine within the IFOR algorithm.\nTech: Implemented in Rust, every part.\nStatus: In progress (and looking promising!)"
   },
   {
-    "objectID": "projects.html#project-2",
-    "href": "projects.html#project-2",
+    "objectID": "projects.html#tsp-art",
+    "href": "projects.html#tsp-art",
     "title": "Projects",
-    "section": "🚀 Project 2:",
-    "text": "🚀 Project 2:"
+    "section": "TSP Art 🖌️🎨",
+    "text": "TSP Art 🖌️🎨\nThe TSP (Traveling Salesman Problem) is one of the grand daddies of computational problems. Given a set of locations, the goal is to find a tour passing through all of them one by one in such a way as to minimize the total distance traveled. So many people have been studying this problem that along the way some came up with something known as TSP art: in short, this idea consists of taking an image, sampling a set of points from it (often from its edges or contours), and computing a TSP tour that connects these points in a single continuous line. The result is a clean, elegant drawing that resembles the original picture but is produced entirely from one uninterrupted path — almost like drawing the whole image without ever lifting the pen.\n\nGoal: Create visually appealing TSP art by converting images into point sets and generating Travelling Salesman Problem tours that form continuous line-drawings. The aim is both to print beautiful, minimalist artworks and to experiment with different TSP solvers to compare performance and aesthetic outcomes.\nTech: Implemented in Rust, exploring various algorithms (exact, heuristic, and metaheuristic) for generating efficient and visually pleasing TSP paths.\nStatus: In progress 🚧\n🔗 View Project"
+  },
+  {
+    "objectID": "projects.html#my-site",
+    "href": "projects.html#my-site",
+    "title": "Projects",
+    "section": "My site",
+    "text": "My site\nI mean… …you’re on it. On a more serious note, this site has been made using Quarto, which is a fantastic tool for data scientists that can do: - ✍️ Documents: Single reports and articles (HTML, PDF, MS Word, ODT, etc.).\n\n💻 Notebooks: Rendered Jupyter Notebooks with enhanced styling and formatting.\n📊 Presentations: Dynamic slide decks (RevealJS/HTML slides and PowerPoint).\n🌐 Websites: Collections of documents and pages with navigation and cross-linking.\n📚 Books: Multi-chapter projects with comprehensive numbering, cross-references, and a table of contents.\n📰 Blogs: Easy-to-manage sites for sharing articles and posts (using Quarto’s quarto publish feature).\n📈 Dashboards: Interactive reports, often leveraging Observable JS.\n\nYou can find out more here"
   },
   {
     "objectID": "RandNLA/intro.html",
