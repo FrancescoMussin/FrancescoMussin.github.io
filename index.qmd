@@ -26,9 +26,6 @@ about:
     - text: MuseScore
       icon: music-note-beamed
       href: https://musescore.com/user/16141436
-    - text: CV
-      icon: file-text
-      href: my-cv-ml.pdf      
 ---
 # Francesco Mussin
 
