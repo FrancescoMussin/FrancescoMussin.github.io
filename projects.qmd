@@ -20,7 +20,7 @@ The [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesm
 - **Goal**: Create visually appealing TSP art by converting images into point sets and generating Travelling Salesman Problem tours that form continuous line-drawings. The aim is both to **print beautiful, minimalist artworks** and to **experiment with different TSP solvers** to compare performance and aesthetic outcomes.
 - **Tech**: Implemented in **Rust** 🦀, exploring various algorithms (exact, heuristic, and metaheuristic) for generating efficient and visually pleasing TSP paths.
 - **Status**: In progress 🚧 
-- [🔗 View Project](https://github.com/FrancescoMussin/TSP-art/tree/master)
+
 
 ## My site 🌐
 
